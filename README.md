@@ -31,7 +31,7 @@ This project features a dynamic and responsive e-commerce cart system developed 
 3. Open the index.html file in your preferred browser
 
 ## Usage
-Open the project in your preferred browser. Use the scroll wheel or trackpad to explore the 3D animations and interact with the various elements throughout the page.
+Interact with the e-commerce cart by adding items, incrementing or decrementing their quantities based on stock availability, and viewing real-time updates to the total cost.
 
 ## License
 This project is licensed under the MIT License.

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar-section">
+      <section class="top-head">
+        <div class="container">
+          <div class="top-txt">
+            <p>Free shipping 30-day return or refund guarantee.</p>
+          </div>
+          <div class="top-links">
+            <a href="#">sign in</a>
+            <a href="#">sign up</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="./images/log.png " width="40%" height="auto" alt="" />
+          </div>
+          <div class="navbar-links">
+            <ul class="navbar-items">
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="products.html">products</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li>
+                <a href="addToCarts.html" class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"> 0 </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="extra-section">
+      <div class="container grid grid-three--cols">
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-txt">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">show now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="./images/laptop.png" alt="" />
+          </div>
+        </div>
+
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-txt">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">show now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="/images/headphone.png" alt="" />
+          </div>
+        </div>
+
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-txt">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">show now</a>
+          </div>
+          <div class="extra-img extra-mobile">
+            <img src="./images/mobiles.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy-section">
+      <div class="container grid grid-four--cols">
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="div-policy-txt">
+            <p>worldwide shipping</p>
+            <p>order above $100</p>
+          </div>
+        </div>
+
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <div class="div-policy-txt">
+            <p>easy 30 day returns</p>
+            <p>back return in 7 days</p>
+          </div>
+        </div>
+
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <div class="div-policy-txt">
+            <p>money back guarantee</p>
+            <p>guarantee with in 30-days</p>
+          </div>
+        </div>
+
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="div-policy-txt">
+            <p>easy online support</p>
+            <p>24/7 any time support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-products">
+      <div class="container container-1">
+        <h2 class="section-common-heading">Checkout XYZ Store</h2>
+      </div>
+
+      <section class="container container-2">
+        <div id="productContainer"></div>
+      </section>
+    </section>
+
+    <template id="productTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <span class="category"></span>
+
+          <div class="imageContainer">
+            <img class="productImage" src="" alt="" />
+          </div>
+
+          <h2 class="productName"></h2>
+
+          <div class="productRating">
+            <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+          </div>
+
+          <div class="productDescr"><p class="productDescription"></p></div>
+
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <p class="productActualPrice"></p>
+          </div>
+
+          <div class="productStockElement">
+            <p class="productProperty">Total Stocks Available :</p>
+            <p class="productStocks"></p>
+          </div>
+
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(Pieces)</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+
+          <button class="add-to-cart-button btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add To Cart
+          </button>
+        </article>
+      </div>
+    </template>
+
+    <footer class="footer-section">
+        <script src="footer.js"></script>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar-section">
+      <section class="top-head">
+        <div class="container">
+          <div class="top-txt">
+            <p>Free shipping 30-day return or refund guarantee.</p>
+          </div>
+          <div class="top-links">
+            <a href="#">sign in</a>
+            <a href="#">sign up</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="./images/log.png " width="40%" height="auto" alt="" />
+          </div>
+          <div class="navbar-links">
+            <ul class="navbar-items">
+              <li><a href="index.html">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">products</a></li>
+              <li><a href="#">contact</a></li>
+              <li>
+                <a href="addToCarts.html" class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"> 0 </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="addToCartElement">
+      <div class="container">
+        <section>
+          <div id="productCartContainer"></div>
+        </section>
+
+        <section class="productCartTotalElem">
+          <div class="productCartTotalElement">
+            <p>Selected Offer Summary</p>
+            <div class="productOrderTotal">
+              <div>
+                <p>Sub Total:</p>
+                <p class="productSubTotal">0</p>
+              </div>
+              <div>
+                <p>Tax:</p>
+                <p class="productTax">50</p>
+              </div>
+              <hr>
+              <div>
+                <p>Final Total:</p>
+                <p class="productFinalTotal">0</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    
+    <template id="productCartTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information card">
+          <div class="category"></div>
+
+          <div class="imageContainer">
+            <img class="productImage" src="../myProject/public/images/laptop.png" alt="" />
+          </div>
+
+          <div><h2 class="productName"></h2></div> 
+
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <!-- <p class="productActualPrice"></p> -->
+          </div>
+
+
+          <div class="productQuantityElement">
+            <!-- <p class="productProperty">Quantity(Pieces)</p> -->
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+
+          <button class="add-to-cart-button remove-to-cart-button btn">
+            <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+            Remove
+          </button>
+
+        </article>
+      </div>
+    </template>
+
+    <footer class="footer-section">
+      <div class="footer-container container">
+        <div class="content-1">
+          <img class="logo" src="./images/logo.png" alt="logo" />
+          <p>
+            Lore, a m ipsum dolor sit amet, consectetur adipisicing elit. Sit
+            asperiores. Error.
+          </p>
+          <img
+            class="cards"
+            src="./images/—Pngtree—common bank card purchase icon_4059420.png"
+            alt="cards"
+          />
+        </div>
+
+        <div class="content-2">
+          <h4>Shopping</h4>
+          <a href="#">Computer Store</a>
+          <a href="#">Laptop Store</a>
+          <a href="#">Accessories</a>
+          <a href="#">Sales & Discount</a>
+        </div>
+        <div class="content-3">
+          <h4>Experience</h4>
+          <a href="#">Contact Us</a>
+          <a href="#">Payment Method</a>
+          <a href="#">Delivery</a>
+          <a href="#">Return and Exchange</a>
+        </div>
+        <div class="content-4">
+          <h4>newsLetters</h4>
+          <p>
+            Be the first to know about new <br />
+            arrivals, sales & promos!
+          </p>
+          <div class="f-mail">
+            <input type="email" placeholder="Your Email" />
+            <i class="bx bx-envelope"></i>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <div class="f-design">
+        <div class="f-design-txt">
+          <p>Design and code by xyz xyz</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="showAddToCartCards.js"></script>
+  </body>
+</html>

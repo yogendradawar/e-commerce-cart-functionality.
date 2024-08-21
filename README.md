@@ -11,7 +11,7 @@ This project features a dynamic and responsive e-commerce cart system developed 
 
 ## Demo
 [Link to Demo](https://e-commerce-cart-functionality.netlify.app/)  
-(Replace `#` with the actual link to your project's live demo.)
+<!-- (Replace `#` with the actual link to your project's live demo.) -->
 
 ## Technologies Used
 - **HTML**
